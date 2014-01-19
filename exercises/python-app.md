@@ -72,12 +72,12 @@ First download the settings to use OpenStack command line interface (CLI)
 tools. Here is how.
 
 1. Login to the dashboard with username `admin` and password `password`.
-2. Click on the 'Project' tab.
-3. Create a VM. Then click on the VM. Switch to the Console tab. You should be
+2. Click on the "Project" tab.
+3. Create a VM. Then click on the VM. Switch to the "Console" tab. You should be
    able to login to verify. Note that we're not going to focus on networking
    aspects in this project and hence do not expect to use the VMs for anything
    other than testing OpenStack functionality.
-4. Switch Access and Security link. Click on API Access tab. Click on "Download
+4. Click on "Access and Security" link and then on the "API Access" tab. Click on "Download
    OpenStack RC File" to download a script with settings. Copy this file to
    your vagrant VM.
 5. Load these settings via `source demo-openrc.sh`. Enter `password`.
