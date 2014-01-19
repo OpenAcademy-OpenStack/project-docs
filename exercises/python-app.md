@@ -69,7 +69,7 @@ dashboard (called Horizon).
 ## Manual Verification
 
 First download the settings to use OpenStack command line interface (CLI)
-tools.
+tools. Here is how.
 
 1. Login to the dashboard with username `admin` and password `password`.
 2. Click on the 'Project' tab.
