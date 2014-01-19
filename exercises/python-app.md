@@ -63,7 +63,7 @@ and run
 ./stack.sh
 ```
 
-From your Mac/desktop, go to `http://192.168.50.4`. You should see OpenStack
+From your Mac, go to `http://192.168.50.4`. You should see OpenStack
 dashboard (called Horizon).
 
 ## Manual Verification
