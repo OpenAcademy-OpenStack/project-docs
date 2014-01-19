@@ -1,4 +1,4 @@
-# Exercise 1
+# Python Client App
 
 In this exercise you will exercise the following OpenStack APIs
 
