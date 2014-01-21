@@ -1,4 +1,3 @@
-
 This is work in progress.
 
 1. Multi-factor authentication for Keystone
@@ -31,4 +30,7 @@ This is work in progress.
 6. Keystone split RO/RW access
   - Refactor such that Keystone can be used used in read-only mode against a read-only slave database
   - Implement unit tests.
+7. Termination protection for compute instances
+  - See the blueprint https://blueprints.launchpad.net/nova/+spec/disable-terminate
+8. Forklift VMs from one cloud to another cloud (Flyway)
 
