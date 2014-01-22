@@ -41,3 +41,22 @@ Next add a file or modify an existing one:
 
     git add myfile.txt
     
+Next commit this change to the local repository with:
+
+    git commit -m "my first commit"
+    
+Let's add another line to "myfile.txt" and modify the first commit to include this change:
+
+    echo "\nThis is another line" >> myfile.txt
+    git add myfile.txt
+    git commit --amend
+    
+Modify the message as necessary and commit the change. Both changes can be pushed to the remote repository "origin" with this command:
+
+    git push origin master
+    
+In a browser go to the repository and verify that "myfile.txt" is there. While there you can go ahead and create a new pull request to get it merged to the "upstream" repository, that is the one in OpenAcademy-OpenStack organization.
+
+
+
+
