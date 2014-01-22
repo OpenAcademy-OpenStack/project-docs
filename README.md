@@ -65,7 +65,7 @@ Overtime your forked repository will get out of sync with the "upstream". It is,
     
 The first command brings in the latest from "upstream" repository. The second command merges all changes from the "master" branch in the upstream to the current local branch. And the last command pushes the new changes to the forked repository, thereby bringing it in sync with upstream.
 
-
+There's much more to Git, but mastering those basic commands should suffice for now.
 
 
 
