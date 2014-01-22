@@ -1,4 +1,3 @@
-
 Getting Started
 ===============
 
@@ -190,6 +189,7 @@ You will notice that the CLI makes HTTP requests to OpenStack APIs. Study the se
 
 Project Structure
 -----------------
+More to come
 
 Exercises
 ==========
