@@ -57,6 +57,16 @@ Modify the message as necessary and commit the change. Both changes can be pushe
     
 In a browser go to the repository and verify that "myfile.txt" is there. While there you can go ahead and create a new pull request to get it merged to the "upstream" repository, that is the one in OpenAcademy-OpenStack organization.
 
+Overtime your forked repository will get out of sync with the "upstream". It is, therefore, important to sync it from time to time. Here's how:
+
+    git fetch upstream
+    git merge upstream/master
+    git push origin master
+    
+The first command brings in the latest from "upstream" repository. The second command merges all changes from the "master" branch in the upstream to the current local branch. And the last command pushes the new changes to the forked repository, thereby bringing it in sync with upstream.
+
+
+
 
 
 
