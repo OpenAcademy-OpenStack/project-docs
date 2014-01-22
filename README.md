@@ -89,6 +89,10 @@ Here's the *pythonic" version:
         
 If you marvel at the second version, you're in for a good ride. If not, it's just a matter of time. Here's a book that we've found useful, https://www.jeffknupp.com/writing-idiomatic-python-ebook-experiment. There are many other more out there.
 
+We also recommend using [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
+
+As for IDE, [PyCharm](http://www.jetbrains.com/pycharm/download/index.html) is a good one, and there's a free community version.
+
 
 
 
