@@ -19,8 +19,13 @@ See [Getting Started Guide](https://github.com/OpenAcademy-OpenStack/project-doc
 
 ## Discussions
 - You'll need to make use of Python clients for Glance (to fetch images), and Nova (to launch instances).
+- Boot with "ubuntu" image created as part of the [setup](https://github.com/OpenAcademy-OpenStack/project-docs)
 - When launching an instance you can get a custom script (a.k.a user data) executed. This gives you the ability to perform additional configurations during boot time. You'll need to leverage this feature to perform the ping test. More information is available [here](http://docs.openstack.org/user-guide/content/user-data.html). 
 - The result of the ping test can be extract from the [console log](http://docs.openstack.org/user-guide/content/novaclient_commands.html#novaclient_subcommand_console-log).
+
+## Key Learning
+- [Cloud Init](https://help.ubuntu.com/community/CloudInit)
+- [User Data](http://docs.openstack.org/user-guide/content/user-data.html)
 
 ## Help
 Use the email list openstack-open-academy-2014@googlegroups.com.
