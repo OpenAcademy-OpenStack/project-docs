@@ -1,5 +1,6 @@
 # List of Projects
 
+
 ## 1. Two-factor Authentication for Keystone
 
 Two-factor authentication adds an extra layer of security on top of user name
@@ -148,6 +149,30 @@ The deliverables include
 - Change devstack to run multiple nova-compute processes in the same host.
 
 **Estimated Team Size:** 2
+
+
+## 7. Hibernation of VM Instances
+
+This project addreses the situation where a hypervisor is full of vm instances which are mostly idle because the instances are not needed currently but may have data or a configuration which is difficult to recreate.  The project will be to design and implement vm hibernation which releases all hypervisor resources but allows quick restoration of the vm instance when it's needed later.
+
+The project will investigate existing openstack blueprints related to this feature and decide which implementation method best fits the use cases and openstack community plans.  It's likely there will be new coding and development needed for this feature.
+
+The user will be able to select a vm and hiberate it.  That will remove the host from the cluster and delete it from the hypervisor but there are several side issues to resolve as well (should the host name be removed from dns? should the IP be deallocated?)
+
+The user will be able to list the hibernated vms in their tenant.
+
+The user will be able to select a hibernated vm and reconsitute it as a running VM.  
+
+The user will be able to delete hibernated vms from the hiberated vm list which will completely delete the data.
+
+Some possible related questions:
+  * How to manage the hypervisors other than kvm.  We would like to hibernate vmware/esx instances too.
+  * Can a hibernated instance be reconsitited on a different hypervisor type?  kvm -> esx for example?
+  * How is the instance flavor and other non-disk-image related metadata captured when the instance is hibernated?
+  * Maybe this could be used to template instances for flex up/flex down and orchestration projects
+  * Provides a simple way to change the flavor of an instance or otherwise change the running instance's attributes
+
+**Estimated Team Size:** 2-4
 
 ## Projects to Explore
 
