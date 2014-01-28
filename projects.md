@@ -1,6 +1,5 @@
 # List of Projects
 
-
 ## 1. Two-factor Authentication for Keystone
 
 Two-factor authentication adds an extra layer of security on top of user name
