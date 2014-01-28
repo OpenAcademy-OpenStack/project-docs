@@ -124,6 +124,31 @@ The deliverables include
 
 **Estimated Team Size:** 2
 
+## 6. Nova Compute Simulator
+
+nova-compute is the component in OpenStack that is responsible for managing 
+the lifecycle of VMs. During this process it gets requests from nova's 
+scheduler to talks to various OpenStack APIs either directly over HTTP or 
+using messages exchanged over RabbitMQ. 
+
+In this project you will introduce a virtual nova compute component that can 
+be used to launch a large number of VMs as well as simulating a large number 
+of hypervisors. This virtual nova compute should introduce a driver simulating 
+the creation of VM with minimal resource consumption, as well as provide a 
+mechanism to launch multiple virtual nova compute. The goal is to be able 
+to simulate load on OpenStack control plane without requiring a large 
+infrastructure footprint.
+
+The deliverables include
+
+- Create nova-compute drivers in nova either as fake or using containers.
+- The driver must support typical lifecycle phases like VM creation, VM 
+  suspension, VM restoration, and VM deletion.
+- A set of configuration changes to enable the above driver(s).
+- Change devstack to run multiple nova-compute processes in the same host.
+
+**Estimated Team Size:** 2
+
 ## Projects to Explore
 
 1. Implement termination protection blueprint
