@@ -1,0 +1,6 @@
+oslo.config
+python-novaclient==2.11.1
+prettytable>=0.6,<0.7
+gevent
+eventlet
+babel

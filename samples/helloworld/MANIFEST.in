@@ -1,0 +1,6 @@
+include README.md
+include setup.py
+graft bin
+graft tools
+recursive-include helloworld *.json *.xml *.pem README *.pot *.sql *.cfg *.mustache *.cer
+global-exclude *.pyc *.sdx *.log *.db *.swp

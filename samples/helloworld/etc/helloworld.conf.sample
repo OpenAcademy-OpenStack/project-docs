@@ -1,0 +1,18 @@
+[DEFAULT]
+debug=True
+verbose=True
+log_file=helloworld.log
+log_dir=/tmp
+
+[service]
+# the number of seconds to sleep between runs
+sleep_interval_sec=60
+
+[helloworld]
+username=admin
+password=password
+tenant_name=admin
+tenant_id=7d9dfbdbf3c14a218808f7e39212ea8b
+auth_url=https://localhost:5443/v2.0
+
+

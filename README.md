@@ -187,9 +187,46 @@ Then run the following commands in debug mode.
 
 You will notice that the CLI makes HTTP requests to OpenStack APIs. Study the sequence of requests, request and response headers and bodies.
 
-Project Structure
------------------
-More to come
+Development Process
+===================
+Requirements
+------------
+It's critical to understand the problems and know what you're expected to deliver. This is often half of the battle. Ask questions early on and check in with your mentor on a regular basis.
+
+Design
+------
+Create a blueprint for your project using this [template](https://github.com/OpenAcademy-OpenStack/project-docs/wiki/Blueprint-Template). Feel free to come up with your own format, but make sure to include the following:
+
+1. Reiterate the requirements as you understand them.
+2. Be specific on what will be delivered, and what is out of the scope.
+3. Design choices with pros and cons of each approach.
+4. Discuss API design, DB schema, etc.
+4. List dependencies.
+5. Track open issues. 
+
+A good design will also give you an idea of the level of effort required to implement the project. 
+
+Implementation
+--------------
+### Coding Guidelines
+##### Separate configurations from code. 
+Usernames, passwords, endpoints, etc., belong in a configuration file. These things change depending on environments and use cases, and should not be hard coded. When you find yourself using numbers and string literals in the code, consider whether it should be extracted to a configuration file instead. OpenStack has a great [utility](https://wiki.openstack.org/wiki/Oslo#oslo.config) for reading from configuration files.
+
+##### Log religiously
+We rely on logs to debug issues in a production environment. Again, it's easy with OpenStack [Oslo](https://wiki.openstack.org/wiki/Oslo). Make sure to use appropriate log levels.
+
+##### Use APIs
+OpenStack has an extensive offering of APIs across all components. We suggest you stay with APIs as much as possible, so that the code works with any OpenStack deployment. If necessary you may query database tables directly, but keep it to a minimum.
+
+##### Provide unit tests
+You don't have to test every edge case. But the expectation is that unit tests should cover most of the code. With Python hopefully you won't have to write a lot of code.
+
+##### Code review
+There are benefits for both sides. 
+
+### Project Structure
+OpenStack projects follow a certain structure, which is also recommended for your project. We strongly suggest that you start with [this sample project](https://github.com/OpenAcademy-OpenStack/project-docs/tree/master/samples/helloworld) as a template.
+
 
 Exercises
 ==========
