@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+
+import traceback
+import os
+import sys
+
+from oslo.config import cfg
+from helloworld.openstack.common import log
+from helloworld.openstack.common import service as osservice
+from helloworld import service as myservice
+
+possible_topdir = os.path.normpath(os.path.join(os.path.abspath(__file__),
+                                                os.pardir, os.pardir))
+if os.path.exists(os.path.join(possible_topdir, 'helloworld', '__init__.py')):
+    sys.path.insert(0, possible_topdir)
+
+CONF = cfg.CONF
+
+if __name__ == '__main__':
+
+    conf_file = os.path.join(possible_topdir, 'etc', 'helloworld.conf')
+    CONF(project='helloworld',
+         default_config_files=[conf_file] if os.path.exists(conf_file) else None)
+
+    # Delay logger setup until conf parsed
+    log.setup('helloworld')
+
+    try:
+        launcher = osservice.ServiceLauncher()
+        launcher.launch_service(myservice.Service())
+        launcher.wait()
+    except:
+        print traceback.print_exc()
