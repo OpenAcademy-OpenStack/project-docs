@@ -30,8 +30,6 @@ example of two-factor authentication implemented in Python. Check
 [AWS Multi-Factor Authentication](http://aws.amazon.com/iam/details/mfa/) for
  an example of how two-factor authentication works in a cloud.
 
-**Estimated Team Size:** 3
-
 ## 2. Access Keys
 
 Imagine a private cloud integrated into a corporate authentication system. 
@@ -61,8 +59,6 @@ the following.
 For an example of access keys might work, see
 [HP Cloud Identity API](http://docs.hpcloud.com/api/identity).
 
-**Estimated Team Size:** 3
-
 ## 3. Flyway: Forklift Resources from One Cloud to Another
 
 In this project you will build a service to copy/move resources from one OpenStack 
@@ -90,9 +86,7 @@ The deliverables mut include the following:
 2. The service must have an API to copy/move the above resources
 3. Documentation on how to setup and use
 
-**Estimated Team Size:** 4
-
-## 4. Repoman: VM Reclamation Service
+## 4. Repoman: VM Reclamation Service (not selected)
 
 In this project you will write a service to cleanup virtual machines based on
  pluggable policies. Examples policies include
@@ -107,8 +101,6 @@ machines. The job must run the policies against each VM. If a user could be
 associated, the service must notify the user before taking any action. If
 allowed by the user, the service must clean up the VM.
 
-**Estimated Team Size:** 3
-
 ## 5. Nova Scheduler Performance
 
 When selecting a hypervisor, the scheduler must loop through all
@@ -122,7 +114,6 @@ The deliverables include
 - Implement one or more performance improvements
 - Unit tests
 
-**Estimated Team Size:** 2
 
 ## 6. Nova Compute Simulator
 
@@ -147,8 +138,6 @@ The deliverables include
 - A set of configuration changes to enable the above driver(s).
 - Change devstack to run multiple nova-compute processes in the same host.
 
-**Estimated Team Size:** 2
-
 
 ## 7. Hibernation of VM Instances
 
@@ -171,7 +160,6 @@ Some possible related questions:
   * Maybe this could be used to template instances for flex up/flex down and orchestration projects
   * Provides a simple way to change the flavor of an instance or otherwise change the running instance's attributes
 
-**Estimated Team Size:** 2-4
 
 ## Projects to Explore
 
